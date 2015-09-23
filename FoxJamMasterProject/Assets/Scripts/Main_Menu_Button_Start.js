@@ -12,7 +12,7 @@ function OnMouseExit()
 GetComponent(SpriteRenderer).sprite = Button;
 }
 
-//function OnMouseDown()
-//{
-//Applicatoin.LoadLevel("Level_1");
-//}
+function OnMouseDown()
+{
+Application.LoadLevel("Level_1");
+}
