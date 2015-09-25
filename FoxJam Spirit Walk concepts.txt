@@ -1,0 +1,44 @@
+Characters:
+Human, Fox
+
+Mechanics
+Fox: Double jump height of human. 
+Smaller collision box
+
+Human: Stronger, can move boulders. 
+Can operate human machinery (winches)
+
+When within radius of eachother: can remove previously immovable obstacles. 
+
+
+
+PUZZLE MECHANICS
+Height(jump and character)
+Keys (object A needed to pass obstacle B)
+Physics (Obstacle C can be moved, used to make space for fox or to create a bridge)
+
+COLLECTABLES
+Increases score.
+Optional puzzles for harder to reach collectables for higher score. 
+
+Level Concepts
+a spirit walk is technically an undefined concept that links to the idea of a traditionally native american vision quest. 
+Therefore we can mold the concept to be what we want them to be. 
+
+Each level as a stage in the walk
+the walk being a journey of self discovery
+Five levels
+Level 1: Tutorial. Colours are light greens, brightish forest. 
+Represents tranquility of purpose in engaging a journey to better oneself. Determination. 
+
+Level 2: Disparity. Colours are darker blues with lighter blues, denser forest. 
+Represents regret. Second guessing. 
+
+Level 3: Chaos. Colours are red, burning. 
+Represents the inner turmoil the character is seeking to tame within the spirit walk
+
+Level 4: Darkness. Colours are dark, blacks, deep purples. 
+Represents the edge of the journey, the character facing the demons within. 
+
+Level 5: Serenity. Golden forest, golden colours, brightness. 
+No fox. Represents the successful outcome of instrospection. 
