@@ -1,4 +1,4 @@
-﻿/*using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 [System.Serializable]
@@ -9,28 +9,46 @@ public class Boundary
 }
 
 public class P1Movement : MonoBehaviour {
-	private Rigidbody2D P1character;
+    Rigidbody2D PRigidbody;
+    Animator anime;
 	public float speed = 1.0f;
 	public Boundary bounds;
+    Vector3 movement;
 	// Use this for initialization
 	void Start () 
 	{
-		P1character = this.Rigidbody2D;
+        PRigidbody = GetComponent<Rigidbody2D>();
+        anime = GetComponent<Animator>();
 	}
 	
    //use fixed update for physics based character
 	void FixedUpdate()
 	{
+        //store input axis
 		float moveHorizontal = Input.GetAxis ("Horizontal");
 		float moveVertical = Input.GetAxis ("Vertical");
 
-		Vector2 movement = new Vector2(moveHorizontal,moveVertical);
-		Rigidbody.velocity = movement * speed * Time.deltaTime;
+        Move(moveHorizontal, moveVertical);
 
-		Rigidbody.position = new Vector2 
-		(Mathf.Clamp (Rigidbody2D.position.x, bounds.xMin, bounds.xMax),
-		 Mathf.Clamp (Rigidbody2D.position.y, bounds.yMin, bounds.yMax));
+        //Turning();
+        //Animating(h, v);
+        
+		//(Mathf.Clamp (Rigidbody2D.position.x, bounds.xMin, bounds.xMax),
+		// Mathf.Clamp (Rigidbody2D.position.y, bounds.yMin, bounds.yMax));
 	}
-}
 
-*/
+    void Move (float h, float v)
+    {
+        movement.Set (h, 0f, v);
+        movement = movement.normalized * speed * Time.deltaTime;
+        PRigidbody.MovePosition(transform.position + movement);
+    }
+
+    //  void Turning() {}
+
+  //  void Animating(float h, float v)
+  //  {
+     //   bool walking = h != 0f;
+
+   // }
+}
