@@ -2,38 +2,59 @@
 using System.Collections;
 
 public class Player1 : MonoBehaviour {
-
-    public float movSpeed = 10f;
-    bool facingRight = true;
-
-    Animator anime;
-    Rigidbody2D myRig;
-
+	
+	public float maxSpeed = 3;
+	public float speed = 50f;
+	public float jumpPower = 200f;
+	
+	public bool grounded;
+	
+	private Rigidbody2D rb2d;
+	private Animator anim;
+	
 	// Use this for initialization
-	void Start ()
-    {
-        anime = GetComponent<Animator>();
-        myRig = GetComponent<Rigidbody2D>();
+	void Start () 
+	{
+		rb2d = gameObject.GetComponent<Rigidbody2D> ();
+		anim = gameObject.GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate ()
-    {
-        float move = Input.GetAxis("Horizontal");
-
-        myRig.velocity = new Vector2(move * movSpeed, myRig.velocity.y);
-
-        if (move > 0 && !facingRight)
-            Flip();
-        else if (move < 0 && facingRight)
-            Flip();
-    }
-
-    void Flip()
-    {
-        facingRight = !facingRight;
-        Vector3 myScale = transform.localScale;
-        myScale.x = -1;
-        transform.localScale = myScale;
-    }
+	void Update () 
+	{
+		anim.SetBool ("Grounded", grounded);
+		anim.SetFloat ("Speed", Mathf.Abs(Input.GetAxis("Horizontal")));
+		
+		if (Input.GetAxis ("Horizontal") < 0f)
+		{
+			transform.localScale = new Vector3(1,1,1);
+		}
+		if (Input.GetAxis ("Horizontal") > -0f) 
+		{
+			transform.localScale = new Vector3(-1,1,1);
+		}
+		
+		if (Input.GetButtonDown ("Jump") && grounded)
+		{
+			rb2d.AddForce(Vector2.up * jumpPower);
+		}
+	}
+	
+	void FixedUpdate()
+	{
+		float h = Input.GetAxis ("Horizontal");
+		
+		rb2d.AddForce((Vector2.right * speed) * h);
+		
+		if (rb2d.velocity.x > maxSpeed)
+		{
+			rb2d.velocity = new Vector2(maxSpeed, rb2d.velocity.y);
+		}
+		
+		if (rb2d.velocity.x < -maxSpeed)
+		{
+			rb2d.velocity = new Vector2(-maxSpeed, rb2d.velocity.y);
+		}
+		
+	}
 }
