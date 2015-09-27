@@ -17,7 +17,7 @@ public class CameraPlayer1Follow : MonoBehaviour {
 	void Awake ()
 	{
 		// Setting up the reference.
-		player1 = GameObject.FindGameObjectWithTag("Player1").transform;
+		player1 = GameObject.FindGameObjectWithTag("Player").transform;
 	}
 	
 	
