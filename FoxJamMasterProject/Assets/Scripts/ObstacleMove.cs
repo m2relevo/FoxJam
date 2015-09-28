@@ -3,10 +3,10 @@ using System.Collections;
 
 public class ObstacleMove : MonoBehaviour {
 
-	public bool interact;
-	public bool perm;
+    public bool interact;
+    public bool perm;
     public bool change;
-	public GameObject obstacle;
+    public GameObject obstacle;
     private Sprite start;
     public Sprite End;
 
@@ -16,55 +16,62 @@ public class ObstacleMove : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D other)
-	{
-		if (other.tag == "Player" || other.tag == "Player2") 
-		{
-			if(perm == true)
-			{
-			   if(interact == false)
-				{
-                    if (change == true)
-                    {
+    {
+        if (other.tag == "Player" || other.tag == "Player2")
+        {
+            if (perm == true)
+            {
+                if (interact == false && change == true)
+                {
+               
                         obstacle.GetComponent<Doors>().DoorGone();
-                        this.GetComponent<SpriteRenderer>().sprite = End;
-                    }
-				}
-			}
-		}
-		if (perm == false) 
-		{
-            if (change == true)
+                        this.GetComponent<SpriteRenderer>().sprite = End;          //permanent change no interact
+                }
+             }
+        }
+        
+        if (perm == false)
+        {
+            if (interact == false && change == false)
             {
-                obstacle.GetComponent<Doors>().DoorGone();
-                this.GetComponent<SpriteRenderer>().sprite = End;
+                obstacle.GetComponent<Doors>().DoorGone();                      //Temporary no change no interact
             }
-            
-		}
-	}
-	void OnTriggerStay2D(Collider2D other)
-	{
-		if(interact == true && Input.GetKeyDown(KeyCode.E))
-		{
-            if (change == true)
+            if(interact == false && change == true)
             {
                 obstacle.GetComponent<Doors>().DoorGone();
-                this.GetComponent<SpriteRenderer>().sprite = End;
+                this.GetComponent<SpriteRenderer>().sprite = End;              //Temporary  change no interact
             }
 
-		}
+
+        }
+    }
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (interact == true && Input.GetKeyDown(KeyCode.E))
+        {
+            if (change == true)
+            {
+                obstacle.GetComponent<Doors>().DoorGone();
+                this.GetComponent<SpriteRenderer>().sprite = End;            //Interactable change perm
+            }
+            if (change == false)
+            {
+                obstacle.GetComponent<Doors>().DoorGone();                   //interactable no change perm
+            } 
+        }
 	}
-	void OnTriggerExit2D(Collider2D other)
+        void OnTriggerExit2D(Collider2D other)
 	{
-		if (other.tag == "Player" || other.tag == "Player2")
-		{
-			if (perm == false) 
-			{
-                if (change == true)
+            if (other.tag == "Player" || other.tag == "Player2")
+            {
+                if (perm == false)
                 {
-                    obstacle.GetComponent<Doors>().DoorGone();
-                    this.GetComponent<SpriteRenderer>().sprite = start;
+                    if (change == true)
+                    {
+                        obstacle.GetComponent<Doors>().DoorGone();                  
+                        this.GetComponent<SpriteRenderer>().sprite = start;
+                    }
                 }
-			}
-		}
-	}
-}
+            }
+        }
+    }
