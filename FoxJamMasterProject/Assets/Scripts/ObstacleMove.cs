@@ -41,8 +41,6 @@ public class ObstacleMove : MonoBehaviour {
                 obstacle.GetComponent<Doors>().DoorGone();
                 this.GetComponent<SpriteRenderer>().sprite = End;              //Temporary  change no interact
             }
-
-
         }
     }
     void OnTriggerStay2D(Collider2D other)
@@ -68,10 +66,14 @@ public class ObstacleMove : MonoBehaviour {
                 {
                     if (change == true)
                     {
-                        obstacle.GetComponent<Doors>().DoorGone();                  
+                        obstacle.GetComponent<Doors>().DoorHere();                  
                         this.GetComponent<SpriteRenderer>().sprite = start;
                     }
-                }
-            }
+                    if (change == false)
+                    {
+                        obstacle.GetComponent<Doors>().DoorHere();
+                    }
+                }   
         }
     }
+ }
