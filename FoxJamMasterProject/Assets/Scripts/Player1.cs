@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Player1 : MonoBehaviour {
 	
-	public float maxSpeed = 3;
+	public float maxSpeed = 3f;
 	public float speed = 50f;
 	public float jumpPower = 200f;
 	
@@ -24,20 +24,22 @@ public class Player1 : MonoBehaviour {
 	{
 		anim.SetBool ("Grounded", grounded);
 		anim.SetFloat ("Speed", Mathf.Abs(Input.GetAxis("Horizontal")));
-		
-		if (Input.GetAxis ("Horizontal") < 0f)
+
+
+        if (grounded && Input.GetKeyDown(KeyCode.W))
+        {
+            rb2d.AddForce(Vector2.up * jumpPower * Time.deltaTime); 
+        }
+        if (Input.GetAxis ("Horizontal") < 0f)
 		{
-			transform.localScale = new Vector3(1,1,1);
+            Debug.Log("Button was pressed");
+            transform.localScale = new Vector3(1,1,1);
 		}
 		if (Input.GetAxis ("Horizontal") > -0f) 
 		{
 			transform.localScale = new Vector3(-1,1,1);
 		}
 		
-		if (Input.GetButtonDown ("Jump") && grounded)
-		{
-			rb2d.AddForce(Vector2.up * jumpPower);
-		}
 	}
 	
 	void FixedUpdate()

@@ -24,12 +24,21 @@ public class Death : MonoBehaviour {
 
 	void killPlayers()
 	{
-		player.GetComponent<SpriteRenderer>().enabled = false;
-		//player2.GetComponent<SpriteRenderer>().enabled = false;
-		player.transform.position = Checkpointpos.position;
-		//player2.transform.position = Checkpointpos.position;
-		player.GetComponent<SpriteRenderer>().enabled = true;
-		//player2.GetComponent<SpriteRenderer>().enabled = true;
+
+        if (Checkpointpos != null)
+        {
+            player.GetComponent<SpriteRenderer>().enabled = false;
+            //player2.GetComponent<SpriteRenderer>().enabled = false;
+            player.transform.position = Checkpointpos.position;
+            //player2.transform.position = Checkpointpos.position;
+            player.GetComponent<SpriteRenderer>().enabled = true;
+            //player2.GetComponent<SpriteRenderer>().enabled = true;
+        }
+
+        if (Checkpointpos == null)
+        {
+            Application.LoadLevel(Application.loadedLevel);
+        }
 	}
 	public void Setcheckpoint(Transform newCheck)
 	{
