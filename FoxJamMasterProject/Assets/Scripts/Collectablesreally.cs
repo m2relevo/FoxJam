@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Collectables : MonoBehaviour 
+public class Collectablesreally : MonoBehaviour 
 {
 	public float max = 1f;
 	public float speed = 5.0f;	
@@ -23,8 +23,7 @@ public class Collectables : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		ScoreManager.score += 100;
-		CollectManager.collect += 1;
+		CollectManager.collect = + 100;
 
 		//renderer.gameObject.color.a = 0;
 		if (other.tag == "Player") 
