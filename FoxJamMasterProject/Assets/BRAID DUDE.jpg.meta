@@ -1,0 +1,539 @@
+fileFormatVersion: 2
+guid: 56ea18369468aae4589c187b7e854802
+timeCreated: 1443451290
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BRAID DUDE_0
+    21300002: BRAID DUDE_1
+    21300004: BRAID DUDE_2
+    21300006: BRAID DUDE_3
+    21300008: BRAID DUDE_4
+    21300010: BRAID DUDE_5
+    21300012: BRAID DUDE_6
+    21300014: BRAID DUDE_7
+    21300016: BRAID DUDE_8
+    21300018: BRAID DUDE_9
+    21300020: BRAID DUDE_10
+    21300022: BRAID DUDE_11
+    21300024: BRAID DUDE_12
+    21300026: BRAID DUDE_13
+    21300028: BRAID DUDE_14
+    21300030: BRAID DUDE_15
+    21300032: BRAID DUDE_16
+    21300034: BRAID DUDE_17
+    21300036: BRAID DUDE_18
+    21300038: BRAID DUDE_19
+    21300040: BRAID DUDE_20
+    21300042: BRAID DUDE_21
+    21300044: BRAID DUDE_22
+    21300046: BRAID DUDE_23
+    21300048: BRAID DUDE_24
+    21300050: BRAID DUDE_25
+    21300052: BRAID DUDE_26
+    21300054: BRAID DUDE_27
+    21300056: BRAID DUDE_28
+    21300058: BRAID DUDE_29
+    21300060: BRAID DUDE_30
+    21300062: BRAID DUDE_31
+    21300064: BRAID DUDE_32
+    21300066: BRAID DUDE_33
+    21300068: BRAID DUDE_34
+    21300070: BRAID DUDE_35
+    21300072: BRAID DUDE_36
+    21300074: BRAID DUDE_37
+    21300076: BRAID DUDE_38
+    21300078: BRAID DUDE_39
+    21300080: BRAID DUDE_40
+    21300082: BRAID DUDE_41
+    21300084: BRAID DUDE_42
+    21300086: BRAID DUDE_43
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: BRAID DUDE_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 352
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 352
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_2
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 353
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_3
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 353
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_4
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 353
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_5
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 353
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_6
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 353
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_7
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 352
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_8
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 353
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_9
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 352
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_10
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 353
+        width: 23
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_11
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 352
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_12
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 352
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_13
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 352
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_14
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 353
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_15
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 353
+        width: 23
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_16
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 353
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_17
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 353
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_18
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 353
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_19
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 353
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_20
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 353
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_21
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 353
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_22
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 353
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_23
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 352
+        width: 29
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_24
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 302
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_25
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 302
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_26
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 301
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_27
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 301
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_28
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 301
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_29
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 301
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_30
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 300
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_31
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 301
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_32
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 301
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_33
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 305
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_34
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 308
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_35
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 308
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_36
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 309
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_37
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 306
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_38
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 306
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_39
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 310
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_40
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 308
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_41
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 308
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_42
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 257
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BRAID DUDE_43
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 256
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
