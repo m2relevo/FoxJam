@@ -26,7 +26,7 @@ public class Collectablesreally : MonoBehaviour
 		CollectManager.collect = + 100;
 
 		//renderer.gameObject.color.a = 0;
-		if (other.tag == "Player") 
+		if (other.tag == "Player" || other.tag == "Player2") 
 		{
 			Destroy(gameObject);
 		}
