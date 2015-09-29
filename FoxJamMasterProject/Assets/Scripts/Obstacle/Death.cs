@@ -5,12 +5,12 @@ public class Death : MonoBehaviour {
 
 	public Transform Checkpointpos;
 	private GameObject player;
-	//private GameObject player2;
+	private GameObject player2;
 
 	void Start()
 	{
 		player = GameObject.FindGameObjectWithTag ("Player");
-		//player = GameObject.FindGameObjectWithTag ("Player2");
+		player2 = GameObject.FindGameObjectWithTag ("Player2");
 	}
 
 	
@@ -28,11 +28,11 @@ public class Death : MonoBehaviour {
         if (Checkpointpos != null)
         {
             player.GetComponent<SpriteRenderer>().enabled = false;
-            //player2.GetComponent<SpriteRenderer>().enabled = false;
+            player2.GetComponent<SpriteRenderer>().enabled = false;
             player.transform.position = Checkpointpos.position;
-            //player2.transform.position = Checkpointpos.position;
+            player2.transform.position = Checkpointpos.position;
             player.GetComponent<SpriteRenderer>().enabled = true;
-            //player2.GetComponent<SpriteRenderer>().enabled = true;
+            player2.GetComponent<SpriteRenderer>().enabled = true;
 		}
 
         if (Checkpointpos == null)
