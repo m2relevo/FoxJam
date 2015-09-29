@@ -14,5 +14,5 @@ GetComponent(SpriteRenderer).sprite = Button;
 
 function OnMouseDown()
 {
-Application.LoadLevel("Level_1");
+Application.LoadLevel("Level_1_Real");
 }
