@@ -6,6 +6,7 @@ public class Player1 : MonoBehaviour {
 	public float maxSpeed = 3;
 	public float speed = 50f;
 	public float jumpPower = 200f;
+	public bool facingRight = true;
 	
 	public bool grounded;
 	
@@ -24,16 +25,6 @@ public class Player1 : MonoBehaviour {
 	{
 		anim.SetBool ("Grounded", grounded);
 		anim.SetFloat ("Speed", Mathf.Abs(Input.GetAxis("Horizontal")));
-		
-		if (Input.GetAxis ("Horizontal") < 0f)
-		{
-			transform.localScale = new Vector3(1,1,1);
-		}
-		if (Input.GetAxis ("Horizontal") > -0f) 
-		{
-			transform.localScale = new Vector3(-1,1,1);
-		}
-		
 		if (Input.GetButtonDown ("Jump") && grounded)
 		{
 			rb2d.AddForce(Vector2.up * jumpPower);
@@ -55,6 +46,23 @@ public class Player1 : MonoBehaviour {
 		{
 			rb2d.velocity = new Vector2(-maxSpeed, rb2d.velocity.y);
 		}
+
+		if(h < 0 && !facingRight)
+			Flip();
+
+		else if(h > 0 && facingRight)
+			Flip();
 		
+	}
+
+	void Flip ()
+	{
+		// Switch the way the player is labelled as facing.
+		facingRight = !facingRight;
+		
+		// Multiply the player's x local scale by -1.
+		Vector3 theScale = transform.localScale;
+		theScale.x *= -1;
+		transform.localScale = theScale;
 	}
 }
