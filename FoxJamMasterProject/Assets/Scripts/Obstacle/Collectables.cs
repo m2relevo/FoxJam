@@ -32,7 +32,7 @@ public class Collectables : MonoBehaviour
 		CollectManager.collect += 1;
 
 		//renderer.gameObject.color.a = 0;
-		if (other.tag == "Player") 
+		if (other.tag == "Player" || other.tag == "Player2") 
 		{
 			Destroy(gameObject);
             alive = false;
