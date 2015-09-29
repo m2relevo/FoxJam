@@ -17,7 +17,7 @@ public class CharacterSwitch : MonoBehaviour {
 		cam2.enabled = false;
 		playingC = false;
 		player1.GetComponent<Player1>().enabled = true;
-		player2.GetComponent<P2move>().enabled = false;
+		player2.GetComponent<Player2>().enabled = false;
 	
 	}
 	
@@ -36,14 +36,14 @@ public class CharacterSwitch : MonoBehaviour {
 		if (Switch == true) 
 		{
 			player1.GetComponent<Player1>().enabled = false;
-			player2.GetComponent<P2move>().enabled = true;
+			player2.GetComponent<Player2>().enabled = true;
 			cam1.enabled = false;
 			cam2.enabled = true;
 		}
 		if (Switch == false) 
 		{
 			player1.GetComponent<Player1>().enabled = true;
-			player2.GetComponent<P2move>().enabled = false;
+			player2.GetComponent<Player2>().enabled = false;
 			cam2.enabled = false;
 			cam1.enabled = true;
 		}
