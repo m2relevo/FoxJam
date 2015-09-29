@@ -33,7 +33,7 @@ public class Death : MonoBehaviour {
             //player2.transform.position = Checkpointpos.position;
             player.GetComponent<SpriteRenderer>().enabled = true;
             //player2.GetComponent<SpriteRenderer>().enabled = true;
-        }
+		}
 
         if (Checkpointpos == null)
         {
@@ -45,5 +45,4 @@ public class Death : MonoBehaviour {
 		Checkpointpos = newCheck.transform;
 
 	}
-
 }
