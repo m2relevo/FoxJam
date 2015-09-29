@@ -23,6 +23,6 @@ public class CollectManager : MonoBehaviour
 	void Update ()
 	{
 		// Set the displayed text to be the word "Score" followed by the score value.
-		text.text = "Collectiables: " + collect;
+		text.text = "Collectables: " + collect;
 	}
 }
