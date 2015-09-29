@@ -6,7 +6,7 @@ public class Collectables : MonoBehaviour
 	public float max = 1f;
 	public float speed = 5.0f;	
 	public SpriteRenderer sprite;
-
+	public int pointvalue = 150;
 	// Use this for initialization
 	void Start () 
 	{
@@ -23,7 +23,7 @@ public class Collectables : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		ScoreManager.score += 100;
+		ScoreManager.score += pointvalue;
 		CollectManager.collect += 1;
 
 		//renderer.gameObject.color.a = 0;
