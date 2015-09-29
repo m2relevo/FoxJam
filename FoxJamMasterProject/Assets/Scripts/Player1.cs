@@ -24,7 +24,7 @@ public class Player1 : MonoBehaviour {
 	void Update () 
 	{
 		anim.SetBool ("Grounded", grounded);
-		anim.SetFloat ("Speed", Mathf.Abs(Input.GetAxis("Horizontal")));
+		anim.SetFloat ("Speed", Mathf.Abs(rb2d.velocity.x));
 		if (Input.GetButtonDown ("Jump") && grounded)
 		{
 			rb2d.AddForce(Vector2.up * jumpPower);
@@ -33,6 +33,16 @@ public class Player1 : MonoBehaviour {
 	
 	void FixedUpdate()
 	{
+		Vector3 easeVelocity = rb2d.velocity;
+		easeVelocity.y = rb2d.velocity.y;
+		easeVelocity.z = 0.0f;
+		easeVelocity.x *= 0.75f;
+
+		if (grounded) 
+		{
+			rb2d.velocity = easeVelocity;
+		}
+
 		float h = Input.GetAxis ("Horizontal");
 		
 		rb2d.AddForce((Vector2.right * speed) * h);
