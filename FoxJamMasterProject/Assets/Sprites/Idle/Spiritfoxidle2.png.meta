@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: f7ab2dea8f9a8c24fad0215a4331d81a
-timeCreated: 1443167941
-licenseType: Free
+timeCreated: 1443521386
+licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
     21300000: Spiritfoxidle2_0
@@ -59,20 +59,20 @@ TextureImporter:
         serializedVersion: 2
         x: 9
         y: 6
-        width: 51
-        height: 59
-      alignment: 6
-      pivot: {x: 0, y: 0}
+        width: 52
+        height: 64
+      alignment: 9
+      pivot: {x: .300000012, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Spiritfoxidle2_1
       rect:
         serializedVersion: 2
         x: 66
         y: 5
-        width: 51
+        width: 52
         height: 64
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .300000012, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Spiritfoxidle2_2
       rect:
@@ -80,29 +80,29 @@ TextureImporter:
         x: 124
         y: 5
         width: 52
-        height: 60
-      alignment: 6
-      pivot: {x: 0, y: 0}
+        height: 64
+      alignment: 9
+      pivot: {x: .300000012, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Spiritfoxidle2_3
       rect:
         serializedVersion: 2
         x: 187
         y: 5
-        width: 50
-        height: 63
-      alignment: 6
-      pivot: {x: 0, y: 0}
+        width: 52
+        height: 64
+      alignment: 9
+      pivot: {x: .300000012, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Spiritfoxidle2_4
       rect:
         serializedVersion: 2
         x: 245
         y: 6
-        width: 50
-        height: 63
-      alignment: 6
-      pivot: {x: 0, y: 0}
+        width: 52
+        height: 64
+      alignment: 9
+      pivot: {x: .300000012, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
