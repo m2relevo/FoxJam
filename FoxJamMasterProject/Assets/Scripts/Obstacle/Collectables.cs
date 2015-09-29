@@ -3,20 +3,25 @@ using System.Collections;
 
 public class Collectables : MonoBehaviour 
 {
+    private bool alive;
 	public float max = 1f;
 	public float speed = 5.0f;	
-	public SpriteRenderer sprite;
+	private SpriteRenderer sprite;
 	public int pointvalue = 150;
 	// Use this for initialization
 	void Start () 
 	{
-
+        alive = true;
+        sprite = this.GetComponent<SpriteRenderer>();
 	}
 
 	// Update is called once per frame
 	void Update () 
 	{
-		sprite.color = new Color(1f, 1f, 1f, Mathf.PingPong(Time.time * speed, max));
+        if (alive == true)
+        {
+            sprite.color = new Color(1f, 1f, 1f, Mathf.PingPong(Time.time * speed, max));
+        }
 	}
 
 
@@ -30,6 +35,7 @@ public class Collectables : MonoBehaviour
 		if (other.tag == "Player") 
 		{
 			Destroy(gameObject);
+            alive = false;
 		}
 	
 	}
