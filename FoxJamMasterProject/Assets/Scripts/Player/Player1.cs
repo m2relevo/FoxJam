@@ -29,6 +29,10 @@ public class Player1 : MonoBehaviour {
 		{
 			rb2d.AddForce(Vector2.up * jumpPower);
 		}
+		if (Input.GetButtonDown ("Jump")) 
+		{
+
+		}
 	}
 	
 	void FixedUpdate()
